@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Il Sistema Solare</title>
+  <link rel="stylesheet" href="generale.css">
+</head>
+<body>
+  <main>
+    <section class="browser">
+      <div class="barra"><span class="pallini"></span>Mini-sito · Sistema Solare</div>
+      <iframe name="sito" src="minisito/index.html" title="Mini-sito sul Sistema Solare"></iframe>
+    </section>
+    <div class="destra">
+      <section class="box html-box">
+        <div class="titolo"><b>HTML COMPLETO</b><span>scegli una pagina</span></div>
+        <div class="code-tabs" role="tablist" aria-label="Pagine HTML">
+          <button class="code-tab active" type="button" data-page="index" role="tab" aria-selected="true">index.html</button>
+          <button class="code-tab" type="button" data-page="pianeti" role="tab" aria-selected="false">pianeti.html</button>
+          <button class="code-tab" type="button" data-page="curiosita" role="tab" aria-selected="false">curiosita.html</button>
+        </div>
+        <div class="codice codice-html">
+          <article class="code-page active" data-page-panel="index">
+            <h3 class="file">minisito/index.html</h3>
+            <pre><code id="display-index"></code></pre>
+            <aside class="spiegazione"><h3>Parti importanti</h3><ul><li><b>head:</b> titolo, codifica, viewport e CSS.</li><li><b>header e nav:</b> intestazione e menu.</li><li><b>main, section e article:</b> struttura semantica.</li><li><b>class e id:</b> stile e link interni.</li><li><b>img, figure e cite:</b> immagine e citazione.</li></ul></aside>
+          </article>
+          <article class="code-page" data-page-panel="pianeti" hidden>
+            <h3 class="file">minisito/pianeti.html</h3>
+            <pre><code id="display-pianeti"></code></pre>
+            <aside class="spiegazione"><h3>Parti importanti</h3><ul><li><b>table:</b> pianeti in righe e colonne.</li><li><b>caption, thead e tbody:</b> organizzano la tabella.</li><li><b>tr, th e td:</b> righe, intestazioni e celle.</li><li><b>id="terra":</b> collegamento interno alla riga.</li><li><b>target="_blank":</b> apre NASA in una nuova scheda.</li></ul></aside>
+          </article>
+          <article class="code-page" data-page-panel="curiosita" hidden>
+            <h3 class="file">minisito/curiosita.html</h3>
+            <pre><code id="display-curiosita"></code></pre>
+            <aside class="spiegazione"><h3>Parti importanti</h3><ul><li><b>article:</b> contiene ogni curiosità.</li><li><b>h3, h4, h5 e h6:</b> livelli diversi di titolo.</li><li><b>p:</b> testi descrittivi.</li><li><b>img:</b> immagine con testo alternativo.</li><li><b>cite:</b> citazione con autore.</li></ul></aside>
+          </article>
+        </div>
+      </section>
+      <section class="box css-box">
+        <div class="titolo"><b>CSS</b><span>minisito/stile.css</span></div>
+        <div class="codice"><h3 class="file">minisito/stile.css</h3><pre><code id="display-css"></code></pre></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="text/plain" id="source-index"><!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Il Sistema Solare</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <header class="hero" id="inizio">
+    <p class="eyebrow">Esplorazione dello spazio</p>
+    <h1>Il Sistema Solare</h1>
+    <p class="intro">
+      Un piccolo viaggio tra il Sole, i pianeti e le meraviglie che orbitano intorno a noi.
+    </p>
+    <nav class="menu" aria-label="Navigazione principale">
+      <a class="active" href="index.html">Home</a>
+      <a href="pianeti.html">Pianeti</a>
+      <a href="curiosita.html">Curiosità</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card intro-card" aria-labelledby="titolo-introduzione">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">In breve</p>
+          <h2 id="titolo-introduzione">Una famiglia in movimento</h2>
+        </div>
+        <span class="badge">8 pianeti</span>
+      </div>
+      <p>
+        Il Sistema Solare è formato dal Sole e da tutti i corpi celesti che gli orbitano intorno.
+        I pianeti seguono percorsi chiamati <span class="highlight">orbite</span>.
+      </p>
+      <figure>
+        <img src="immagini/sistema-solare.svg" alt="Schema del Sole e delle orbite dei pianeti">
+        <figcaption>Rappresentazione del Sistema Solare.</figcaption>
+      </figure>
+      <p class="quote">
+        <cite>“Da qualche parte, qualcosa di incredibile aspetta di essere conosciuto.”</cite>
+        <br>— Carl Sagan
+      </p>
+    </section>
+    <section class="card" id="caratteristiche" aria-labelledby="titolo-caratteristiche">
+      <p class="eyebrow">Come orientarsi</p>
+      <h2 id="titolo-caratteristiche">Tre idee da ricordare</h2>
+      <div class="columns">
+        <article><h3>Il Sole</h3><p>È la stella al centro e contiene quasi tutta la massa del Sistema Solare.</p></article>
+        <article><h4>I pianeti</h4><p>Ruotano intorno al Sole e hanno caratteristiche molto diverse.</p></article>
+        <article><h5>Le orbite</h5><p>Sono i percorsi dei corpi celesti.</p></article>
+        <article><h6>La gravità</h6><p>È la forza che mantiene i pianeti in orbita.</p></article>
+      </div>
+      <p class="links">
+        <a href="#caratteristiche">Link nella pagina ↑</a> ·
+        <a href="pianeti.html">Vai a un’altra pagina →</a> ·
+        <a href="https://it.wikipedia.org/wiki/Sistema_solare" target="_blank" rel="noopener">Scopri su Wikipedia ↗</a>
+      </p>
+    </section>
+  </main>
+  <footer><p>Mini-sito didattico · <a href="#inizio">Torna all’inizio</a></p></footer>
+</body>
+</html></script>
+
+  <script type="text/plain" id="source-pianeti"><!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I pianeti</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <header class="hero" id="inizio">
+    <p class="eyebrow">La nostra galassia</p>
+    <h1>I pianeti</h1>
+    <p class="intro">Dai pianeti rocciosi ai giganti gassosi: ecco una panoramica semplice.</p>
+    <nav class="menu" aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a class="active" href="pianeti.html">Pianeti</a>
+      <a href="curiosita.html">Curiosità</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card" aria-labelledby="titolo-tabella">
+      <p class="eyebrow">Confronto rapido</p>
+      <h2 id="titolo-tabella">I pianeti in tabella</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Ordine dei pianeti dal Sole</caption>
+          <thead>
+            <tr><th>Posizione</th><th>Pianeta</th><th>Tipo</th><th>Curiosità</th></tr>
+          </thead>
+          <tbody>
+            <tr id="mercurio"><td>1</td><td>Mercurio</td><td>Roccioso</td><td>Il più vicino al Sole</td></tr>
+            <tr id="venere"><td>2</td><td>Venere</td><td>Roccioso</td><td>Il più caldo</td></tr>
+            <tr id="terra"><td>3</td><td>Terra</td><td>Roccioso</td><td>L’unico con vita conosciuta</td></tr>
+            <tr id="marte"><td>4</td><td>Marte</td><td>Roccioso</td><td>Il pianeta rosso</td></tr>
+            <tr id="giove"><td>5</td><td>Giove</td><td>Gassoso</td><td>Il più grande</td></tr>
+            <tr id="saturno"><td>6</td><td>Saturno</td><td>Gassoso</td><td>Famoso per gli anelli</td></tr>
+            <tr id="urano"><td>7</td><td>Urano</td><td>Gassoso</td><td>Ruota quasi sdraiato</td></tr>
+            <tr id="nettuno"><td>8</td><td>Nettuno</td><td>Gassoso</td><td>Il più lontano</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="links"><a href="#terra">Vai alla Terra</a> · <a href="index.html#caratteristiche">Torna alle caratteristiche</a></p>
+    </section>
+    <section class="card planet-card">
+      <img src="immagini/terra.svg" alt="Illustrazione della Terra">
+      <div>
+        <p class="eyebrow">Il nostro pianeta</p>
+        <h2>La Terra</h2>
+        <p>La Terra è il terzo pianeta dal Sole. La presenza di acqua liquida e di un’atmosfera adatta rende possibile la vita.</p>
+        <a class="button" href="https://science.nasa.gov/earth/" target="_blank" rel="noopener">Approfondisci sulla NASA ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><p>Mini-sito didattico · <a href="#inizio">Torna all’inizio</a></p></footer>
+</body>
+</html></script>
+
+  <script type="text/plain" id="source-curiosita"><!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curiosità spaziali</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <header class="hero" id="inizio">
+    <p class="eyebrow">Lo sapevi che...</p>
+    <h1>Curiosità spaziali</h1>
+    <p class="intro">Piccole informazioni per guardare il cielo con occhi nuovi.</p>
+    <nav class="menu" aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a href="pianeti.html">Pianeti</a>
+      <a class="active" href="curiosita.html">Curiosità</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <p class="eyebrow">Tre scoperte</p>
+      <h2>Il Sistema Solare è pieno di sorprese</h2>
+      <div class="columns">
+        <article>
+          <img src="immagini/sole.svg" alt="Illustrazione del Sole">
+          <h3>La luce</h3>
+          <p>La luce del Sole impiega circa 8 minuti per arrivare sulla Terra.</p>
+        </article>
+        <article><h4>La Grande Macchia Rossa</h4><p>Su Giove c’è una tempesta gigantesca che dura da centinaia di anni.</p></article>
+        <article><h5>Gli anelli</h5><p>Saturno non è l’unico pianeta con anelli, ma è quello che li mostra meglio.</p></article>
+        <article><h6>Il giorno marziano</h6><p>Un giorno su Marte dura poco più di 24 ore terrestri.</p></article>
+      </div>
+      <p class="quote"><cite>“L’universo non è obbligato ad avere senso per te.”</cite><br>— Neil deGrasse Tyson</p>
+      <p class="links"><a href="index.html">← Torna alla home</a> · <a href="https://www.esa.int/Space_in_Member_States/Italy" target="_blank" rel="noopener">Visita ESA ↗</a></p>
+    </section>
+  </main>
+  <footer><p>Mini-sito didattico · <a href="#inizio">Torna all’inizio</a></p></footer>
+</body>
+</html></script>
+
+  <script type="text/plain" id="source-css">:root {
+  --ink: #1d1d1f;
+  --muted: #6e6e73;
+  --line: #e6e1d8;
+  --blue: #2867c7;
+  --cream: #fbfaf7;
+  --sky: #eaf2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(180deg, #fffdf9, #f2f5fa);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+.hero,
+main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.hero {
+  padding-top: 26px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  margin: 0 auto 14px;
+  font-size: clamp(2.2rem, 6vw, 4.3rem);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+}
+
+.menu {
+  display: inline-flex;
+  gap: 6px;
+  margin: 26px 0 20px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffffaa;
+}
+
+.menu a {
+  padding: 8px 15px;
+  border-radius: 999px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #fff;
+  background: var(--ink);
+}
+
+main {
+  display: grid;
+  gap: 18px;
+  padding-bottom: 40px;
+}
+
+.card {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #ffffffc9;
+  box-shadow: 0 18px 45px #263c5a12;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.columns article {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--cream);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 18px;
+}
+
+.quote {
+  padding: 14px 18px;
+  border-left: 3px solid var(--blue);
+  background: #f3f7fe;
+}
+
+.quote cite {
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+th {
+  color: #31527c;
+  background: var(--sky);
+}
+
+.links a,
+.button {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 13px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ink);
+}
+
+footer {
+  padding: 0 28px 26px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 680px) {
+  .hero,
+  main {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</script>
+
+  <script>
+    const escapeHTML = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const colorHTML = (source) => {
+      let code = escapeHTML(source);
+      code = code.replace(/(&lt;!--[\s\S]*?--&gt;)/g, '<span class="syn-comment">$1</span>');
+      return code.replace(/(&lt;\/?)([a-zA-Z0-9-]+)([\s\S]*?)(\/?&gt;)/g, (_, opening, tag, attributes, closing) => {
+        const attrs = attributes.replace(/([a-zA-Z:-]+)(=)("[^"]*")/g, '<span class="syn-attr">$1</span><span class="syn-eq">$2</span><span class="syn-value">$3</span>');
+        return '<span class="syn-punctuation">' + opening + '</span><span class="syn-tag">' + tag + '</span>' + attrs + '<span class="syn-punctuation">' + closing + '</span>';
+      });
+    };
+    const colorCSS = (source) => {
+      let code = escapeHTML(source);
+      code = code.replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="syn-css-comment">$1</span>');
+      code = code.replace(/(^|[}\n])([^{}\n]+)(?=\s*\{)/g, '$1<span class="syn-selector">$2</span>');
+      return code.replace(/([a-z-]+)(\s*:)([^;{}]+)(;)/gi, '<span class="syn-property">$1</span><span class="syn-css-punctuation">$2</span><span class="syn-css-value">$3</span><span class="syn-css-punctuation">$4</span>');
+    };
+    ["index", "pianeti", "curiosita"].forEach((page) => {
+      document.getElementById("display-" + page).innerHTML = colorHTML(document.getElementById("source-" + page).textContent.trim());
+    });
+    document.getElementById("display-css").innerHTML = colorCSS(document.getElementById("source-css").textContent.trim());
+    document.querySelectorAll(".code-tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        const page = button.dataset.page;
+        document.querySelectorAll(".code-tab").forEach((tab) => { tab.classList.toggle("active", tab === button); tab.setAttribute("aria-selected", tab === button); });
+        document.querySelectorAll(".code-page").forEach((panel) => { const selected = panel.dataset.pagePanel === page; panel.hidden = !selected; panel.classList.toggle("active", selected); });
+      });
+    });
+  </script>
+</body>
+</html>
